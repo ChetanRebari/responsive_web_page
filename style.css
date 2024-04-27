@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styles */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+  
+
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header Style */
+
+body {
+    position: relative; 
+ } 
+
+.mid-header-bg, .bottom-header-bg{
+    /* position: sticky;  */
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+ }  
+
+.bottom-header-bg {
+    top: 70px;
+    padding: 10px 0;
+    box-shadow: 3px 5px 3px 0px #0000000d;
+ }
+
+.top-header-bg {
+    background-color: #2b5e31;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 40px;
+    align-items: center;
+}
+
+.top-header .discount-section a{
+    color: #3bb64c;
+}
+
+.top-header .contact-section ul li img {
+    width: 20px;
+    padding-right: 6px;
+}
+
+.top-header .contact-section ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 9px;
+    border-right: 1px solid #ffff;
+}
+
+.top-header .contact-section ul li:last-child {
+    border-right: 0
+}
+
+.mid-header {
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mid-header .logo-section img {
+    max-width: 100%;
+    width: 140px;
+}
+
+.mid-header .login-detail-section  {
+    align-items: center;
+}
+
+.mid-header .login-detail-section .search-section {
+    padding-right: 20px;
+}
+
+.mid-header .login-detail-section .search-section input {
+    border: 1px solid #ddd;
+    width: 250px;
+    height: 19px;
+    padding: 5px;
+    border-radius: 2px;
+    position: relative;
+    padding-right: 30px;
+    background-image: url(./images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+    background-position-x: 98%;
+}
+
+.mid-header  .login-and-cart-section img {
+    width: 25px;
+}
+
+.button-no-style {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.mid-header  .login-and-cart-section .login-block {
+    padding-right: 16px;
+}
+
+.mid-header  .login-and-cart-section .cart-icon-section {
+    position: relative;
+}
+
+.mid-header  .login-and-cart-section .cart-item-count {
+    position: absolute;
+    background: #3bb64c;
+    color: #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    right: -4px;
+    top: -4px;
+}
+
+.bottom-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-header .nav-section {
+    width: 80%;
+}
+
+.bottom-header .nav-section ul {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.bottom-header .nav-section li {
+    cursor: pointer;
+}
+
+.order-now-section button {
+    background: #3bb64c;
+    border: 1px solid #3bb64c;
+    border-radius: 2px;
+    color: #fff;
+    padding: 6px 10px;
+    margin-left: 30px;
+}
+
+.main-section {
+    background: #fff;
+
+}
+
+.main-section .banner-section {
+    background-image: url(./images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   padding-top: 20px;
+}
+
+
+.main-section .banner-contant .banner-header {
+    font-size: 34px;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.main-section .banner-contant .options-list li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-section .banner-contant .options-list .options-list-icon img {
+    width: 75px;
+    padding-right: 16px;
+}
+
+.main-section .banner-contant .options-list .options-list-detail h6 {
+    font-size: 24px;
+    color: #5e6283;
+}
+
+.main-section .banner-contant .options-list .options-list-detail p {
+    color: #5e6283;
+}
+
+
+.main-section .banner-contant .banner-action button {
+    background: #2b5e31;
+    border: 1px solid #2b5e31;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 26px;
+    border-radius: 40px;
+    font-weight: 300;
+}
+
+.order-now-section-mobile {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* Styles for small devices go here */
+    .top-header{
+        flex-direction: column;
+        height: auto;
+        font-size: 14px;
+    }
+    .discount-section,.contact-section { 
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .mid-header{
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .mid-header .login-detail-section .search-section input {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 7px;
+        padding-right: 0;
+    }
+
+    .order-now-section-mobile {
+        display: block;
+    }
+
+    .order-now-section-desktop {
+        display: none;
+    }
+
+    .bottom-header-bg {
+        display: none
+    }
+
+    .banner-contant {
+        box-shadow: 7px 7px 7px #00000059;
+        width: 75%;
+        background-color: #fff;
+        padding: 13px;
+        border-radius: 4px;
+    }
+
+    .main-section .banner-contant .banner-header {
+        font-size: 26px;
+        padding-bottom: 13px;
+    }
+    
+    .main-section .banner-contant .options-list .options-list-icon img {
+        width: 60px;
+        padding-right: 10px;
+    }
+
+    .main-section .banner-contant .options-list .options-list-detail h6 {
+        font-size: 20px;
+    }
+
+    .main-section .banner-contant .options-list .options-list-detail p {
+        font-size: 14px;
+    }
+
+    .main-section .banner-contant .banner-action button {
+        padding: 8px 16px;
+        margin-top: 18px;
+    }
+
+    .main-section .banner-section {
+        background-size: cover;
+        background-position: bottom;
+    }
+
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+
+
+    
+  }
+  
+  /* Large devices (desktops, 992px and below) */
+  @media only screen and (max-width: 992px) {
+    /* Styles for large devices go here */
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and below) */
+  @media only screen and (max-width: 1200px) {
+    /* Styles for extra large devices go here */
+    .top-header {
+        font-size: 12px;
+        text-align: center;
+    }
+  }
+  
+  /* Landscape orientation */
+  @media only screen and (orientation: landscape) {
+    /* Styles for landscape orientation go here */
+  }
+  
+  /* Portrait orientation */
+  @media only screen and (orientation: portrait) {
+    /* Styles for portrait orientation go here */
+  }
+  
